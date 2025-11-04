@@ -1,0 +1,107 @@
+
+
+
+.container-hero-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.left-container-box h2{
+  font-size: 50px;
+}
+.text-span{
+  background: linear-gradient(90deg,rgba(61, 155, 42, 0.93) 0%, rgba(148, 139, 21, 1) 52%, rgba(37, 26, 110, 1) 100%);
+  /* background-clip: content-box; */
+   background-size: cover;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+}
+/* Text box */
+.left-container-box {
+  flex: 1;
+  max-width: 40%; /* text smaller */
+  line-height: 1.4;
+  color: #333;
+  background: #fff;
+  padding: 25px 30px;
+
+}
+.left-container-box article{
+   font-size: 17px;
+   line-height: 1.7;
+  color: rgb(2, 2, 24);
+  text-align: left;
+  margin-top: 50px;
+  
+
+}
+.left-container-box p{
+  font-size: 17px;
+  line-height: 1.7;
+  margin-top: 50px;
+  text-align: left;
+}
+
+/* Image box */
+.right-image-section {
+  flex: 1;
+  max-width: 60%; /* image bigger */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right-image-section img {
+  width: 100%;      /* image full expand */
+  height: auto;
+  margin-top: 100px;
+}
+.btn-content{
+  padding: 15px 50px;
+  border-radius:5px ;
+  margin-top: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  border: none;
+  color: white;
+  transition:0.5s ease-in 0s normal;
+  background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+.btn-content:hover{
+background: linear-gradient(90deg,rgba(61, 155, 42, 0.93) 0%, rgb(21, 19, 9) 52%, rgba(26, 25, 8, 1) 100%);
+color:rgb(166, 165, 165);
+
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .container-hero-section {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .left-container-box {
+    max-width: 100%;
+  }
+
+  .right-image-section {
+    max-width: 100%;
+  }
+
+  .right-image-section img {
+    width: 90%; /* thoda chhota tablet me */
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .right-image-section img {
+    width: 100%; /* mobile me poora */
+  }
+}
